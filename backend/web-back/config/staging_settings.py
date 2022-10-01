@@ -4,6 +4,10 @@ from .settings import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://yourdomain:8080',
+]
+
 ALLOWED_HOSTS = ['*']
 
 STORAGE_NAME = os.environ.get('STORAGE_NAME')
